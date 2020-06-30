@@ -15,6 +15,7 @@ remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
+# #기본구성
 locale                   : "ko"
 title                    : "Hailey Blog"
 title_separator          : "-"
@@ -24,11 +25,17 @@ description              : "차곡차곡 쌓아두는 블로그"
 url                      : "https://khenotbb.github.io"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+
+# #teaser와 logo 그림파일
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+
+
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+
+# #블로그 댓글 기능
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -92,6 +99,7 @@ analytics:
 
 
 # Site Author
+# #사이트 저자 소개
 author:
   name             : "Hailey"
   avatar           : "/assets/images/Light-purple.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
@@ -119,7 +127,9 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
+
 # Site Footer
+# #사이트 저자 소개(Footer)
 footer:
   links:
     - label: "Twitter"
@@ -130,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/kHeNoTbB"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -207,10 +217,11 @@ sass:
 
 
 # Outputting
+# #블로그 표시 방법 설정
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 5 # amount of posts to show #첫 페이지에서 보여줄 최근 게시물 수를 지정함
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
